@@ -13,16 +13,22 @@ name = input("What is your name? ")
 #a word without quotes is a variable, which is contain value and data.
 #a word with quotes is a string, which is a value that represents text.
 
-if name == "Robocafe, robocafe, AI, robocafe AI, Robocafe AI":
-    print("Hey! That's my name! You can't use my name!\n")
-    input("Again, what is your name? ")
-
-#Greet the user nicely
-print(f"Hello {name}!, welcome to Le Cafe Julien.\n\n"
+if name == "Robocafe": #If the user is using our AI name: Robocafe, then print a message
+    print("Hey!, " + name + " is my name! you can't use my name to order coffee here.\n")
+else: #Greet the user nicely
+    print(f"Hello {name}!, welcome to Le Cafe Julien.\n\n"
       +"Thank you for coming in today.\n")
-#(f"aaaa") is an f-string, which allows you to mix variables and strings together.
-#{name} is a variable that being input by the user
-#in the f-string here, I used two newlines (\n\n), one for a new line after the greeting, and another one to create a space before the next sentence.
+    #(f"aaaa") is an f-string, which allows you to mix variables and strings together.
+    #{name} is a variable that being input by the user
+    #in the f-string here, I used two newlines (\n\n), one for a new line after the greeting, and another one to create a space before the next sentence.
+
+#Here, i used an if statement to prevent the user using our Robocafe Ai ordering coffee.
+#if is a keyword that checks if a condition is true or false (or we call it a boolean value).
+#else is a keyword that is used when the if condition is false.
+#so "if" condition is true, it will execute the code inside the if block.
+#If the condition is false, it will execute the code inside the else 
+#= is an operator to assign a value to a variable.
+#== is an operator to compare two values, and it returns True if they are equal, or False if they are not.
 
 #Define the menu as a variable
 menu = ("- Americano-style\n"
