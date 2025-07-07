@@ -13,6 +13,10 @@ name = input("What is your name? ")
 #a word without quotes is a variable, which is contain value and data.
 #a word with quotes is a string, which is a value that represents text.
 
+if name == "Robocafe, robocafe, AI, robocafe AI, Robocafe AI":
+    print("Hey! That's my name! You can't use my name!\n")
+    input("Again, what is your name? ")
+
 #Greet the user nicely
 print(f"Hello {name}!, welcome to Le Cafe Julien.\n\n"
       +"Thank you for coming in today.\n")
