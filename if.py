@@ -9,7 +9,7 @@
 
 # Defining variable for Andrew here:
 name = "Andrew" #his name is Andrew
-age = 54 #his age is 34
+age = 34 #his age is 34
 occupation = "Salesman" #his occupation is Salesman
 workplace = "Adira Assurance" #he works at Adira Assurance
 skills = ["Sales", "Marketing", "Customer Service", "Communication"]
@@ -24,33 +24,36 @@ skills_required = ["Sales", "Marketing", "Customer Service", "Communication"]
 #skills must have the exact same value as skills_required to be eligible for the job. 
 
 # If and else statement example
-if age < maximum_age or age > minimum_age: #let's say the age limit for the job is 45, if the age is less than 45, then this message will be printed.
+if age > maximum_age or age < minimum_age: #let's say the age limit for the job is 45, if the age is less than 45, then this message will be printed.
     #use "or" to add another rule into the if statement.
     #if you use "or", the code will be executed if one of the rules are met!
-    print(f"{name} is still eligible to work at {workplace} as a {occupation}.")
+    print(f"{name} is not eligible to work at {workplace} as a {occupation}.")
     #f-string here because we want to mix variables and strings together.
-    if skills == skills_required:
+else: #so if the age is not less than 45, then this message will be printed.
+    print(f"{name} is eligible to work at {workplace} as a {occupation} anymore.")
+
+if skills == skills_required:
         print(f"{name} has the required skills to work at {workplace} as a {occupation}.\n")
         #this will be printed if the skills variable (Andrew) are met, which is the same as skills_required.
-    else:
+else:
         print(f"{name} does not have the required skills to work at {workplace} as a {occupation}.\n")
         #this will be printed if the skills variable (Andrew) are not met, which is not same as skills_required.
-else: #so if the age is not less than 45, then this message will be printed.
-    print(f"{name} is not eligible to work at {workplace} as a {occupation} anymore.")
 
 #Defining variable for other random person here:
 name2 = "Marlina" #her name is Marlina
 age2 = 27 #She is 27 years old
 occupation2 = "Cashier" #let's say she's a cashier
 workplace2 = "K-9 Mart" #She's working at K-9 Mart
-skills2 = ["Cashier"]  #her skills are Communication and Customer Service
+skills2 = ["Communication", "Customer Service", "Accounting", "Cashier"] #define Marlina's skills here.
+#use [] (list) to define a list of her skills.
+#use [] to define a list, which is a collection of items that can be of any data type.
 
 #Let's define the criteria to work in K-9 Mart as a Cashier here:
 minimum_age2 = 20 #say K-9 Mart doesn't want to hire underage.
 maximum_age2 = 45 #say that above 45 is too old for a cashier.
 
 
-#Here, let's try to use "or", "and", "if", "elif", "else" and "if not"
+#Here, let's try to use "or", "and", "if", "elif", "else", "in" and "if not"
 #Let's make a fictive variable here:
 if not name2 == "Brandon": #the code will be executed if the name2 variable isn't Brandon.
     print(f"This is the story of {name2}, not Brandon. Wait, who's Brandon?") #Giving vibes like a story narrator!
@@ -72,13 +75,15 @@ else: #this is if the skills2 variable isn't the same as skills_required, then h
     print(f"{name2} does not have the required skills to work at {workplace} as a {occupation}.") #Mar
 
 #Filtering by the skills required, to work in K-9 Mart as a Cashier
-if skills2 == "Cashier":
-    print(f"{name2} can be a cashier.\n")
-elif skills2 =="Accounting":
-    print(f"{name2} can also do some accounting.\n")
-elif skills2 =="Customer Service":
-    print(f"{name2} can also serve a customer.\n")
-elif skills2 =="Communication":
-    print(f"{name2} also a good communicator.\n")
-else:
-    print(f"{name2} can't do anything to be a {occupation2}\n")
+if "Cashier" in skills2: #the code will be executed if the skills2 variable contains "Cashier".
+    print(f"{name2} can be a cashier at {workplace2}.\n") #if Marlina skills2 contains "Cashier", it will execute this message and skip the rest.
+elif "Accounting" in skills2: #the code will be executed if the skills2 variable contains "Accounting".
+    print(f"{name2} can also do some accounting at {workplace2}.\n") #if Marlina skills2 contains "Accounting", it will execute this message and skip the rest.
+elif "Customer Service" in skills2: #the code will be executed if the skills2 variable contains "Customer Service".
+    print(f"{name2} can also serve a customer at {workplace2}.\n") #if Marlina skills2 contains "Customer Service", it will execute this message and skip the rest.
+elif "Communication" in skills2: #the code will be executed if the skills2 variable contains "Communication".
+    print(f"{name2} is a good communicator at {workplace2}.\n") #if Marlina skills2 contains "Communication", it will execute this message and skip the rest.
+else: #this is if the skills2 variable doesn't contain "Cashier", "Accounting", "Customer Service" or "Communication", then he/she can't do anything.
+    print(f"{name2} can't do anything to be a {occupation2} at {workplace2}.\n")
+#always remember that elif functional is to pivot from the first if statement. if the first statement is true, it will skip the rest of the elif statements.
+#try to delete any string in skills2 variable to see what will happen.
