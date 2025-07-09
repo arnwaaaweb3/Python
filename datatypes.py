@@ -20,6 +20,7 @@ print("There are many types of data in Python, such as:")
 print(type(name))
 print(type(age))
 print(type(height))
+print(type(name == "Nolan"))
 print()
 #type() is a function to tell you the type of the variable.
 #but it won't print anything to the console, so you need to use print() to see the result.
@@ -30,7 +31,20 @@ equation = height * age
 print(f"1. What is {height} times {age} equal to?")
 print(f"The answer is: {equation}")
 print(type(equation))
+print()
 #here, we're using equation as a variable to store the result of the multiplication.
 #python can also authomatically calculate the result of the multiplication, so you don't have to do it manually.
 #use asterisk * to multiply, slash / to divide, plus + to add, and minus - to subtract. ** to eskponentiate (pangkat).
 #you can also use parentheses () to group the operations, like this: (height * age) + 10.
+
+#"Yes, That's right!" = True
+#"No, That's wrong!" = False
+print(f"2. Is 4 times 9 equal to 38 ?")
+if 4 * 9 == 38 == True: 
+    print("Yes, That's right!")
+else:
+    print("No, That's wrong!")
+print(f"The answer is {4 * 9}\n")
+#here, we're using if statement to check if the equation is right or wrong.
+#our rule is: if 4 x 9 = 38, then the code will be executed and the message will be printed.
+#however, if the equation is wrong, then the "else" part will be executed and the message will be printed.
