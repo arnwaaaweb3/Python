@@ -88,3 +88,14 @@ else: #this is if the skills2 variable doesn't contain "Cashier", "Accounting", 
     print(f"{name2} can't do anything to be a {occupation2} at {workplace2}.\n")
 #always remember that elif functional is to pivot from the first if statement. if the first statement is true, it will skip the rest of the elif statements.
 #try to delete any string in skills2 variable to see what will happen.
+
+#New variable:
+favorite_football_team = "Real Madrid"
+if favorite_football_team != "Bayern Munich": #Here we can use "!=" to check if the value of the variable is different from the value we want.
+     print(f"{name} likes {favorite_football_team} better than Bayern Munich.\n")
+else:
+     print(f"{name} likes Bayern Munich better than {favorite_football_team}.\n")
+#so the logic of "!=" is like this:
+#if the value of the variable is not the same as the value we want, then the code will be executed, else the code will be skipped.
+#if the value of favorite_football_team is Real Madrid, then the code will be ignored, and the else statement will be executed.
+#it's like the inverse of "==" operator! h

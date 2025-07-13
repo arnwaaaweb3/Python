@@ -5,7 +5,6 @@
 print("Hello, my name is Robocafe!\n" 
       + "Your personal cafe AI assistant.\n")
 
-
 #Ask for the name of the user
 name = input("What is your name? ")
 #input() is a function that takes user input from the console.
@@ -22,7 +21,6 @@ else: #else is a keyword that is used when the if condition is false.
 #(f"aaaa") is an f-string, which allows you to mix variables and strings together.
 #{name} is a variable that being input by the user
 #in the f-string here, I used two newlines (\n\n), one for a new line after the greeting, and another one to create a space before the next sentence.
-
 
 #Define the menu as a variable
 menu = ("- Americano-style\n"
