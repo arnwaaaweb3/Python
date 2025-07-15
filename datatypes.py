@@ -5,6 +5,7 @@ name = "Nolan"
 age = 21
 height = 164.57
 weight = 56.70
+pet = ["cat", "fish", "bird"]
 
 
 print(f"{name} is {age} years old.")
@@ -21,6 +22,7 @@ print(type(name))
 print(type(age))
 print(type(height))
 print(type(name == "Nolan"))
+print(type(pet))
 print()
 #type() is a function to tell you the type of the variable.
 #but it won't print anything to the console, so you need to use print() to see the result.
